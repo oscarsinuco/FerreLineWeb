@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilosinicio.css">
+	<script type="text/javascript">
+		function funcionemergente(){
+			var a = window.open("popup.html",'Ventana',"width=300,height=400,top=150px,left=220px");
+		}
+		function abrirPagina(pagina){
+			window.open(pagina,'Ventana',"width=500, height=700,top=200px, left=550px");
+		}
+	</script>
+</head>
+<body>
+<div class="fondo">
+</div>
+<div id="buscador">
+	<input class="texto" id="buscar"></input>
+	<button class="boton-enviar" id="buscar1"></button>
+</div>
+<div id="menu">
+	<div id="fblur">
+	</div>
+	<div id="header" style="margin-top: 150px;">
+		<ul class="nav">
+			<li style="margin-bottom: 2px;"><a href=".html">INICIO</a></li>
+			<li style="margin-bottom: 2px;"><a href="">QUIENES SOMOS</a>
+				<ul>
+					<li><a href="quienes-somos/index.html#og">OBJETIVOS GENERALES</a></li>
+					<li><a href="quienes-somos/index.html#oe">OBJETIVOS ESPECIFICOS</a></li>
+					<li><a href="quienes-somos/index.html#mi">MISÍON</a></li>
+					<li><a href="quienes-somos/index.html#vi">VISIÓN</a></li>
+				</ul>
+			</li>
+			<li style="margin-bottom: 2px;"><a href="">INSERTAR DATOS</a>
+				<ul>
+					<li><a onclick="javascript:abrirPagina('almacen_pagina.php')">ALMACEN</a></li>
+					<li><a onclick="javascript:abrirPagina('cliente_pagina.php')">CLIENTE</a></li>
+					<li><a onclick="javascript:abrirPagina('director_pagina.php')">DIRECTOR</a></li>
+					<li><a onclick="javascript:abrirPagina('empleado_pagina.php')">EMPLEADO</a></li>
+					<li><a onclick="javascript:abrirPagina('jefe_pagina.php')">JEFE</a></li>
+					<li><a onclick="javascript:abrirPagina('mensajero_pagina.php')">MENSAJERO</a></li>
+					<li><a onclick="javascript:abrirPagina('mensajero_vehiculo_pagina.php')">MENSAJERO-VEHICULO</a></li>
+					<li><a onclick="javascript:abrirPagina('pedido_pagina.php')">PEDIDO</a></li>
+					<li><a onclick="javascript:abrirPagina('producto_pagina.php')">PRODUCTO</a></li>
+					<li><a onclick="javascript:abrirPagina('sede_pagina.php')">SEDE</a></li>
+				</ul>
+			</li>
+			<li style="margin-bottom: 2px;"><a href="">CONSULTAR DATOS</a>
+				<ul>
+					<li><a href="consultar_almacen.php">CONSULTAR ALMACEN</a></li>
+					<li><a href="consultar_cliente.php">CONSULTAR CLIENTE</a></li>
+					<li><a href="consultar_director.php">CONSULTAR DIRECTOR</a></li>
+					<li><a href="consultar_empleado.php">CONSULTAR EMPLEADO</a></li>
+					<li><a href="consultar_jefe.php">CONSULTAR JEFE</a></li>
+					<li><a href="consultar_mensajero.php">CONSULTAR MENSAJERO</a></li>
+					<li><a href="consultar_mensajero_vehiculo.php">CONSULTAR M - V</a></li>
+					<li><a href="consultar_pedido.php">CONSULTAR PEDIDO</a></li>
+					<li><a target="_blank" href="consultar_producto.php">CONSULTAR PRODUCTO</a>
+						<ul>
+							<li><a target="_blank" href="consultar_precios.php">CONSULTAR PRECIO</a></li>
+							<li><a target="_blank" href="consultar_producto.php">CONSULTAR RANGO</a></li>
+						</ul>
+					</li>
+					<li><a href="consultar_sede.php">CONSULTAR SEDE</a></li>
+				</ul>
+			</li>
+			<li style="margin-bottom: 2px;"><a href="">CONTACTO</a>
+				<ul>
+					<li><a href="contacto/index.html">DATOS</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+		<button class="boton-enviar" id="masinfor" onclick="javascript:funcionemergente()"></button>
+		<div id="logo">
+			<img src="imagenes/logoicon.png" width="130%"><br/>
+		</div>
+</div>
+<div class="cuerpoinicio">
+	AQUI IRÁ EL CONTENIDO DE LA PÁGINA
+</div>
+
+</body>
+</html>

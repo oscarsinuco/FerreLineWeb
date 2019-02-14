@@ -1,0 +1,1 @@
+En esta carpeta debería ir la página primera que hicimos junto con sus imagenes correspondientes y se debe llamar index.html

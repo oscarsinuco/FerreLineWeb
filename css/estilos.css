@@ -1,0 +1,295 @@
+/*
+Los textos deben tener las clases texto y text1
+Los botones enviar y borrar deben llevar la clase boton-enviar
+A los textarea no se les coloca clase
+Los selectores llevan las clases selector y texto
+ */
+.texto{
+  height: 30px;
+  border-style: none;
+  border-radius: 3px;
+  font-family: Century Gothic;
+  padding: 0px 5px 0px 5px;
+  font-size: 15px;
+  margin: 5px;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 30px;
+}
+.texto:hover{
+  transition: 0.2s;
+  border-style: none;
+  border-color: blue;
+  background-color: rgb(201, 254, 252);
+  border: 1px solid;
+  border-color: rgb(186, 254, 254);
+}
+.texto:focus{
+  outline: 0px;
+  border: 2px solid;
+  border-color: rgb(96, 133, 145);
+  background-color: rgb(220, 254, 254);
+}
+label{
+  width: 40%;
+  color: white;
+  float: left;
+  font-style: italic;
+  font-size: 20px;
+  height: 30px;
+  text-align: right;
+  margin-top: 5px;
+  padding-top: 5px;
+  margin-bottom: 24px;
+}
+p{
+  color: white;
+  font-family: Century Gothic;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.text1{
+  width: 40%;
+}
+.selector{
+  width: 42%;
+}
+.selector:hover{
+  transition: 0.2s;
+  height: 33px;
+  width: 42.5%;
+}
+.encabezado{
+  height: 100px;
+  background-color: rgb(248, 207, 22);
+}
+.cuerpo, .encabezado{
+  z-index: -1;
+  width: 450px;
+  margin: 0px auto 30px auto;
+  border-radius: 3px;
+}
+.cuerpo{
+  padding-top: 20px;
+  background-color: rgba(0, 0, 30,0.5);
+  padding-bottom: 30px;
+}
+h1{
+  margin: 0px 0px 0px 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  float: left;
+  font-family: Nirmala UI;
+  font-size: 250%;
+}
+h2{
+  margin: 0px 0px 0px 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  float: left;
+  font-family: Nirmala UI;
+  font-size: 230%;
+}
+.contenedor{
+  width: 480px;
+  background-color: rgba(255,255,200,0.1);
+  padding: 1px;
+  position: relative;
+  float: right;
+  margin-right: 20%;
+  box-shadow: 0px 0px 18px 6px rgba(10,10,10,1);
+}
+.fondo{
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1500px;
+  z-index: -1;
+  background-image: url('../imagenes/fondo1.jpg');
+  background-size: 100% 100%;
+  filter: blur(5px);
+}
+body{
+  margin: 0;
+  z-index: 0;
+}
+.boton-enviar{
+  border-style: none;
+  position: relative;
+  height: 42px;
+  background-color: rgba(0,0,0,0);
+  background-size: contain;
+  margin: 30px 0px 0px 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+ }
+ #enviar{
+  background-image: url("../imagenes/enviar.png");
+  border-radius: 25px;
+  width: 39%;
+  left: 30.5%;
+ }
+ #borrar{
+  background-image: url("../imagenes/borrar.png");
+  width: 17%;
+  left: 42.5%;
+  border-radius: 5px;
+ }
+.boton-enviar:hover{
+  transition: 0.2s;
+  background-color: rgba(255,255,255,0.4);
+  cursor: pointer;
+  cursor: hand;
+}
+.imagen-logo-form{
+  float: right;
+  margin: 10px 0px 0px 0px;
+}
+.boton-enviar > #env{
+  width: 100%;
+}
+.boton-enviar > #borrar{
+  width: 30%;
+}
+button:focus{
+  outline: 0px;
+}
+.imagen-logo-form:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+h1:hover{
+  transition: 0.2s;
+  color: rgb(30,30,30);
+}
+label:hover{
+  transition: 0.2s;
+  color: rgb(220,220,220);
+}
+textarea{
+  position: relative;
+  max-width: 40%;
+  min-width: 40%;
+  min-height: 30px;
+  height: 30px;
+  max-height: 80px;
+  border-style: none;
+  border-radius: 3px;
+  font-family: Century Gothic;
+  padding: 0px 5px 0px 5px;
+  font-size: 15px;
+  margin: 5px;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 30px;
+}
+textarea:hover{
+  transition: 0.2s;
+  border-style: none;
+  border-color: blue;
+  background-color: rgb(201, 254, 252);
+  border: 1px solid;
+  border-color: rgb(186, 254, 254);
+}
+
+#menu
+{
+  position: fixed;
+  z-index: 9999;
+  margin:0;
+  width:200px;
+  height:800px;
+}
+#fblur{
+	width: 200px;
+	height: 1300px;
+	opacity: 0.7;
+	position: absolute;
+	background-image: url("../imagenes/menu.jpg");
+	filter: blur(2px);
+  background-size: 100% 100%;
+	z-index: -1;
+}
+#logo
+{
+  margin: 10px 0px 10px 35px;
+  width:160px;
+  height: 160px;
+  margin-top: 150px;
+  float: left;
+}
+
+#header
+{
+  margin:0;
+  margin-top: 50px;
+  width:190px;
+  height: 160px;
+  float: left;
+}
+
+ul
+{
+  margin: 0px 0px 0px 5px;
+  padding: 0px;
+  list-style: none;
+}
+
+.nav > li
+{
+  float:left;
+}
+.nav li
+{
+  width: 190px;
+  height: 40px;
+  background-color: rgba(8,41,138,0.7);
+  opacity: 0.9;
+  line-height: 40px;
+  text-align: center;
+  font-size: 100%;
+  border-radius: 5px;
+  margin: 1px 0px 1px 0px;
+  border: 1px solid gray;
+}
+
+.nav li a
+{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.consultar_producto
+{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.nav li a:hover
+{
+  transition: all 0.3s;
+  background-color: rgba(231, 185, 200,0.2);
+}
+
+.nav li ul 
+{
+  display: none;
+  position: relative;
+  right:-185px;
+  top:-42px;
+}
+
+.nav li:hover > ul
+{
+  display: block;
+}
+#masinfor{
+  margin-top: 90px;
+  background-image: url("../imagenes/masinfo.png");
+  background-size: contain;
+  width: 80%;
+  margin-left: 10%;
+}

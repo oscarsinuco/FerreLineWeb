@@ -1,0 +1,8 @@
+#menu{
+	display: none;
+}
+.contenedor{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+}
