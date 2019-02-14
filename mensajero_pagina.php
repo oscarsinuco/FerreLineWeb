@@ -5,6 +5,7 @@
 	<title>Mensajero</title>
 	<script type="text/javascript" src="validaciones.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos_emergentes.css">
 </head>
 <body>
 	<div class="fondo">
