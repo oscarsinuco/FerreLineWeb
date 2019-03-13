@@ -12,12 +12,13 @@
 		$apellido2 = $_POST['apellido2'];
 		$direccion = $_POST['direccion'];
 		$sexo = $_POST['sexo'];
-		$cargo = $_POST['cargo'];
+		$profesion = $_POST['profesion'];
 		$telefono = $_POST['telefono'];
 		$correo = $_POST['correo'];
 		$fecha_nacimiento = $_POST['fecha_nacimiento'];
+		$contrasena = $_POST['contrasena'];
 		$conexion = pg_connect("host=localhost user=postgres port=5432 dbname=FerreLine password=123456"); 
-		$sql3="insert into cliente values ('$cedula_c','$id_barrio', '$nombre','$apellido1','$apellido2','$direccion','$sexo','$cargo','$telefono','$correo','$fecha_nacimiento')"; 
+		$sql3="insert into cliente values ('$cedula_c','$id_barrio', '$nombre','$apellido1','$apellido2','$direccion','$sexo','$profesion','$telefono','$correo','$fecha_nacimiento','$contrasena')"; 
 		$result = pg_query($conexion, $sql3);
 	?>
 	<font face="Nirmala UI">
@@ -93,10 +94,10 @@
 								</td>
 							</tr>
 							<tr align="center">
-								<th>Cargo</th>
+								<th>Profesion</th>
 								<td>
 								<?php 
-									echo $_POST['cargo'];
+									echo $_POST['profesion'];
 								?>
 								</td>
 							</tr>

@@ -19,8 +19,9 @@
 		$telefono = $_POST['telefono'];
 		$correo = $_POST['correo'];
 		$fecha_nacimiento = $_POST['fecha_nacimiento'];
+		$contrasena = $_POST['contrasena'];
 		$conexion = pg_connect("host=localhost user=postgres port=5432 dbname=FerreLine password=123456"); 
-		$sql3="insert into empleado values ('$id_empleado','$id_barrio', '$id_nomina','$nombre','$apellido1','$apellido2','$direccion','$cedula','$sexo','$cargo','$ruc','$telefono','$correo','$fecha_nacimiento')"; 
+		$sql3="insert into empleado values ('$id_empleado','$id_barrio', '$id_nomina','$nombre','$apellido1','$apellido2','$direccion','$cedula','$sexo','$cargo','$ruc','$telefono','$correo','$fecha_nacimiento','$contrasena')"; 
 		$result = pg_query($conexion, $sql3);
 	?>
 	<font face="Nirmala UI">

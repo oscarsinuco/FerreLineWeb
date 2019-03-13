@@ -15,9 +15,10 @@
 		$sexo = $_POST['sexo'];
 		$correo = $_POST['correo'];
 		$fecha_nacimiento = $_POST['fecha_nacimiento'];
+		$contrasena = $_POST['contrasena'];
 
 		$conexion = pg_connect("host=localhost user=postgres port=5432 dbname=FerreLine password=123456"); 
-		$sql3="insert into jefe values ('$cedula_j','$nombre','$apellido1','$apellido2','$direccion','$telefono','$sexo','$correo','$id_barrio','$fecha_nacimiento')"; 
+		$sql3="insert into jefe values ('$cedula_j','$nombre','$apellido1','$apellido2','$direccion','$telefono','$sexo','$correo','$id_barrio','$fecha_nacimiento','$contrasena')"; 
 		$result = pg_query($conexion, $sql3);
 
 	?>

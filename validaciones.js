@@ -136,14 +136,15 @@ function validartodo1(){
 	var v5 = document.getElementById("apellido2").value;
 	var v6 = document.getElementById("direccion").value;
 	var v7 = document.getElementById("sexo").value;
-	var v8 = document.getElementById("cargo").value;
+	var v8 = document.getElementById("profesion").value;
 	var v9 = document.getElementById("ruc").value;
 	var v10 = document.getElementById("telefono").value;
 	var v11 = document.getElementById("correo").value;
 	var v12 = document.getElementById("fecha_nacimiento").value;
-	var valores = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12];
+	var v13 = document.getElementById("contrasena").value;
+	var valores = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13];
 	var contador = 0;
-	for (var i = 1; i <= 12; i++) {
+	for (var i = 1; i <= 13; i++) {
 		if(valores[i] == null){
 			valores[i] = "";
 		}
@@ -161,10 +162,11 @@ function validartodo1(){
 	var ver8 = nombres("apellido2");
 	var ver9 = novacio("direccion");
 	var ver10 = sede("sexo");
-	var ver11 = nombres("cargo");
+	var ver11 = nombres("profesion");
 	var ver12 = num("ruc");
-	var verificacion = !(ver1 && ver2 && ver3 && ver4 && ver5 && ver6 && ver7 && ver8 && ver9 && ver10 && ver11 && ver12); 
-	if(contador != 12 && verificacion){
+	var ver13 = novacio("contrasena");
+	var verificacion = !(ver1 && ver2 && ver3 && ver4 && ver5 && ver6 && ver7 && ver8 && ver9 && ver10 && ver11 && ver12 && ver13); 
+	if(contador != 13 && verificacion){
 		alert("Faltan campos por llenar o hay algunos con valores no aceptados");
 		return false;
 	}
@@ -225,9 +227,10 @@ function validartodo3(){
 	var v12 = document.getElementById("fecha_nacimiento").value;
 	var v13 = document.getElementById("id_nomina").value;
 	var v14 = document.getElementById("cedula").value;
-	var valores = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14];
+	var v15 = document.getElementById("contrasena").value;
+	var valores = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15];
 	var contador = 0;
-	for (var i = 1; i <= 14; i++) {
+	for (var i = 1; i <= 15; i++) {
 		if(valores[i] == null){
 			valores[i] = "";
 		}
@@ -250,8 +253,9 @@ function validartodo3(){
 	var ver12 = num("id_nomina");
 	var ver13 = num("cedula");
 	var ver14 = validarcorreo("correo");
-	var verificacion = !(ver1 && ver2 && ver3 && ver4 && ver5 && ver6 && ver7 && ver8 && ver9 && ver10 && ver11 && ver12 && v13 && v14); 
-	if(contador != 14 && verificacion){
+	var ver15 = novacio("contrasena");
+	var verificacion = !(ver1 && ver2 && ver3 && ver4 && ver5 && ver6 && ver7 && ver8 && ver9 && ver10 && ver11 && ver12 && ver13 && ver14 && ver15); 
+	if(contador != 15 && verificacion){
 		alert("Faltan campos por llenar o hay algunos con valores no aceptados");
 		return false;
 	}
@@ -270,9 +274,10 @@ function validartodo4(){
 	var v8 = document.getElementById("correo").value;//
 	var v9 = document.getElementById("fecha_nacimiento").value;//
 	var v10 = document.getElementById("cedula_j").value;//
-	var valores = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10];
+	var v11 = document.getElementById("contrasena").value;//
+	var valores = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11];
 	var contador = 0;
-	for (var i = 1; i <= 10; i++) {
+	for (var i = 1; i <= 11; i++) {
 		if(valores[i] == null){
 			valores[i] = "";
 		}
@@ -290,8 +295,9 @@ function validartodo4(){
 	var ver8 = novacio("direccion");//
 	var ver9 = sede("sexo");//
 	var ver10 = num("cedula_j");//
-	var verificacion = !(ver1 && ver2 && ver3 && ver4 && ver5 && ver6 && ver7 && ver8 && ver9 && ver10); 
-	if(contador != 10 && verificacion){
+	var ver11 = novacio("contrasena");
+	var verificacion = !(ver1 && ver2 && ver3 && ver4 && ver5 && ver6 && ver7 && ver8 && ver9 && ver10 && ver11); 
+	if(contador != 11 && verificacion){
 		alert("Faltan campos por llenar o hay algunos con valores no aceptados");
 		return false;
 	}

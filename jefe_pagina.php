@@ -58,7 +58,7 @@
 					<li><a target="_blank" href="consultar_sede.php">CONSULTAR SEDE</a></li>
 				</ul>
 			</li>
-			<li style="margin-b<li style="margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
+			<li style="margin-b<li style=margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
 				<ul>
 					<li><a href="contacto/index.html">DATOS</a></li>
 				</ul>
@@ -121,6 +121,8 @@
 			<input onchange="validarcorreo('correo')" type="text" name="correo" class="texto text1" id="correo" placeholder="alguien@example.etc">
 			<label>Fecha de Nacimiento</label>
 			<input onchange="validarFecha('fecha_nacimiento')" type="text" name="fecha_nacimiento" class="texto text1" id="fecha_nacimiento" placeholder="yyyy-mm-dd">
+			<label>contraseña</label>
+				<input type="password" name="contrasena" class="texto text1" id="contrasena" onchange="novacio('contrasena')">
 			<button type="submit" class="boton-enviar" name="enviar" id="enviar" value="Enviar datos"> </button><button class="boton-enviar" type="reset" id="borrar" name="borrar" value="Limpiar"></button>
 			</form>
 		</div>

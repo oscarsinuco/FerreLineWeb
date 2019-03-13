@@ -58,7 +58,7 @@
 					<li><a target="_blank" href="consultar_sede.php">CONSULTAR SEDE</a></li>
 				</ul>
 			</li>
-			<li style="margin-b<li style="margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
+			<li style="margin-b<li style=margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
 				<ul>
 					<li><a href="contacto/index.html">DATOS</a></li>
 				</ul>
@@ -72,7 +72,7 @@
 	<div class="contenedor" style="height: 1120px;">
 		<div class="encabezado"><h1>CLIENTE</h1></div>
 		<div class="cuerpo">
-			<form onsubmit="return validartodo1()" name="cliente" action="cliente.php" method="POST">
+			<form name="cliente" action="cliente.php" method="POST" onsubmit="return validartodo1()">
 				<label>Cedula</label>
 				<input name="cedula_c" class="texto text1" id="cedula_c" onchange="num('cedula_c')">
 				<label>Id barrio</label>
@@ -115,8 +115,8 @@
 						M
 					</option>
 				</select>
-				<label>Cargo</label>
-				<input type="text" name="cargo" class="texto text1" id="cargo" onchange="nombres('cargo')">
+				<label>Profesion</label>
+				<input type="text" name="profesion" class="texto text1" id="profesion" onchange="nombres('profesion')">
 				<label>RUC</label>
 				<input type="text" name="ruc" class="texto text1" id="ruc" onchange="num('ruc')">
 				<label>Telefono</label>
@@ -125,6 +125,8 @@
 				<input type="email" name="correo" class="texto text1" id="correo" onchange="validarcorreo('correo')" placeholder="alguien@example.etc">
 				<label>Fecha de Nacimiento</label>
 				<input type="text" name="fecha_nacimiento" class="texto text1" id="fecha_nacimiento" onchange="validarFecha('fecha_nacimiento')" placeholder="yyyy-mm-dd">
+				<label>Contraseña</label>
+				<input type="password" name="contrasena" class="texto text1" id="contrasena" onchange="novacio('contrasena')">
 			  <button type="submit" class="boton-enviar" name="enviar" id="enviar" value="Enviar datos"> </button><button class="boton-enviar" type="reset" id="borrar" name="borrar" value="Limpiar"></button>
 			</form>
 	  </div>
