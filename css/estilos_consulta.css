@@ -10,22 +10,76 @@ tr{
 	.modificacion{
 		width: 40%;
 	}
-
+	.formulario label{
+		color: white;
+		font-size: 10px;
+	}
 	.contenido{
 		width: 70%;
 	}
 	.encabezado h1{
 		font-size:40px;
 	}
+	.formulario label{
+		color: white;
+		font-size: 18px;
+	}
 	.grupo_formulario input[type=text], select,input[type=password],input[type=email], input[type=date], input[type=number], input[type=submit]{	
 		height: 30px;
 	}
+
+	.grupo_formulario input[type=text], select,input[type=password],input[type=email], input[type=date], input[type=number], input[type=submit]{
+		margin-bottom: 10px;
+	}
 }
 @media only screen and (min-width: 700px) and (max-width: 899px){
-
+	.modificacion{
+		width: 90%;
+	}
+	.formulario label{
+		color: white;
+		font-size: 20px;
+	}
+	.enviar_div input[type=submit]{
+		height: 50px;
+		width: 100px;
+		font-weight: bold;
+		font-size: 35px;
+	}
+	.grupo_formulario input[type=text], select,input[type=password],input[type=email], input[type=date], input[type=number], input[type=submit]{
+		margin-bottom: 10px;
+	}
+	.contenido{
+		width: 70%;
+	}
+	.encabezado h1{
+		font-size:35px;
+	}
+	.grupo_formulario input[type=text], select,input[type=password],input[type=email], input[type=date], input[type=number], input[type=submit]{	
+		height: 40px;
+	}
 }
 @media only screen and (max-width: 700px){
-
+	.modificacion{
+		width: 90%;
+	}
+	.formulario label{
+		color: white;
+		font-size: 15px;
+	}
+	.contenido{
+		width: 80%;
+	}
+	
+	.grupo_formulario input[type=text], select,input[type=password],input[type=email], input[type=date], input[type=number], input[type=submit]{
+		margin-bottom: 10px;
+	}
+	.encabezado h1{
+		font-size:30px;
+	}
+	.grupo_formulario input[type=text], select,input[type=password],input[type=email], input[type=date], input[type=number], input[type=submit]{	
+		height: 35px;
+	}
 }
 .modificacion{
 	margin: auto;
@@ -36,10 +90,6 @@ tr{
 }
 .contenido{
 	margin: auto;
-}
-.formulario label{
-	color: white;
-	font-size: 10px;
 }
 .grupo_formulario input[type=text], select,input[type=password],input[type=email], input[type=date], input[type=number], input[type=submit]{	
 	border-radius: 5px;
@@ -52,9 +102,7 @@ tr{
 	align-items: center;
 }
 .enviar_div input[type=submit]{
-	height: 30px;
 	color: white;
-	width: 60px;
 	margin: 10px;
 	background-color: green;
 }

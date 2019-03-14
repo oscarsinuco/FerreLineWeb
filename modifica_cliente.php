@@ -5,83 +5,36 @@
 <html>
 <head>
 	<title>Modificar Cliente</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilos_consulta.css">
 	<script type="text/javascript" src="validaciones.js"></script>
 </head>
 <body>
-<div class="modificacion">
-	<div style="width: 100%">
-		<div class="encabezado">
-			<h1>Modifica tus datos</h1>
-		</div>
-		<div class="contenido">
-			<div class="formulario">
-				<form action="" method="POST">
-					<div class="grupo_formulario">
-						<label>Cedula</label>
-						<input type="number" name="" disabled="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Barrio</label>
-						<input type="text" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Nombre</label>
-						<input type="text" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Apellido 1</label>
-						<input type="text" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Apellido 2</label>
-						<input type="text" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Direccion</label>
-						<input type="text" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Sexo</label>
-						<input type="text" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Profesion</label>
-						<input type="text" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Telefono</label>
-						<input type="number" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Correo</label>
-						<input type="email" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Fecha de nacimiento</label>
-						<input type="date" name="">
-					</div>
-					<div class="grupo_formulario">
-						<label>Contraseña</label>
-						<input type="password" name="">
-					</div>
-					<div class="grupo_formulario enviar_div">
-						<input type="submit" name="">
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-		<?php
-		include("conectar.php");
-		$valor1 = 0;
-		$valor2 = 0;
-		$conexion = conectarse();
-		extract($_POST);
+		<?php /*
+			include("conectar.php");
+			$valor1 = 0;
+			$valor2 = 0;
+			$conexion = conectarse();
+			extract($_POST);
 
-		if($_POST == null){
-			echo "<table align='center' border='1' cellspacing='0' cellspacing='0'>";
+			if($_POST == null){
+				$consulta_cliente = "select * from cliente where cedula_c = '1102331110'";
+				$resultado = pg_query($conexion,$consulta_cliente);
+				$row = pg_fetch_array($resultado);
+
+					$cedula_c = $row['0'];
+					$id_barrio = $row['1'];
+					$nombre = $row['2'];
+					$apellido1 = $row['3'];
+					$apellido2 = $row['4'];
+					$direccion = $row['5'];
+					$sexo = $row['6'];
+					$profesion = $row['7'];
+					$telefono = $row['8'];
+					$correo = $row['9'];
+					$fecha_nacimiento = $row['10'];
+					$contrasena = $row['11'];
+					echo "<table align='center' border='1' cellspacing='0' cellspacing='0'>";
 			echo "<caption>Datos de usuario</caption>";
 			echo "<tr>";
 
@@ -100,22 +53,7 @@
 
 			echo "</tr>";
 			//$consulta_cliente = "select * from cliente where cedula_c = '".$_SESSION['cedula_c']."';"; 
-			$consulta_cliente = "select * from cliente where cedula_c = '1102331110'";
-			$resultado = pg_query($conexion,$consulta_cliente);
-			$row = pg_fetch_array($resultado);
-
-				$cedula_c = $row['0'];
-				$id_barrio = $row['1'];
-				$nombre = $row['2'];
-				$apellido1 = $row['3'];
-				$apellido2 = $row['4'];
-				$direccion = $row['5'];
-				$sexo = $row['6'];
-				$profesion = $row['7'];
-				$telefono = $row['8'];
-				$correo = $row['9'];
-				$fecha_nacimiento = $row['10'];
-				$contrasena = $row['11'];
+			
 
 			echo "<form name='formulario10' method='POST' action='modifica_cliente.php' onsubmit='return validartodo1()'>";
 
@@ -237,6 +175,72 @@
 
 
 		}
+			*/
 	?>
+<div class="modificacion">
+	<div style="width: 100%">
+		<div class="encabezado">
+			<h1>Modifica tus datos</h1>
+		</div>
+		<div class="contenido">
+			<div class="formulario">
+				<form action="" method="POST">
+					<div class="grupo_formulario">
+						<label>Cedula</label>
+						<input type="number" name="<?php echo $cedula_c; ?>" disabled>
+						<input type='hidden' name='cedula_c' value='<?php echo $cedula_c;?>'>
+					</div>
+					<div class="grupo_formulario">
+						<label>Barrio</label>
+						<input type="text" name="" name="<?php echo $cedula_c; ?>">
+					</div>
+					<div class="grupo_formulario">
+						<label>Nombre</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Apellido 1</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Apellido 2</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Direccion</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Sexo</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Profesion</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Telefono</label>
+						<input type="number" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Correo</label>
+						<input type="email" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Fecha de nacimiento</label>
+						<input type="date" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Contraseña</label>
+						<input type="password" name="">
+					</div>
+					<div class="grupo_formulario enviar_div">
+						<input type="submit" name="">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
