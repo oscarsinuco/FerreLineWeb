@@ -106,8 +106,7 @@
 			echo "</form>";
 		}
 		if($_POST != null && $opcion == 'eliminar'){
-
-			$consulta2 = "DELETE FROM empleado where id_empleado = '".$_SESSION['id_eliminar']".'";
+			$consulta2 = "DELETE FROM empleado where id_empleado = '$_SESSION[id_eliminar]'";
 			$resultado = pg_query($conexion,$consulta2);
 
 		}

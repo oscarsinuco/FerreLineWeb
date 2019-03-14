@@ -1,7 +1,5 @@
 <?php
-
 	session_start();
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,8 +8,72 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos_consulta.css">
 	<script type="text/javascript" src="validaciones.js"></script>
 </head>
-<body>	
-<?php
+<body>
+<div class="modificacion">
+	<div style="width: 100%">
+		<div class="encabezado">
+			<h1>Modifica tus datos</h1>
+		</div>
+		<div class="contenido">
+			<div class="formulario">
+				<form action="" method="POST">
+					<div class="grupo_formulario">
+						<label>Cedula</label>
+						<input type="number" name="" disabled="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Barrio</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Nombre</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Apellido 1</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Apellido 2</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Direccion</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Sexo</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Profesion</label>
+						<input type="text" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Telefono</label>
+						<input type="number" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Correo</label>
+						<input type="email" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Fecha de nacimiento</label>
+						<input type="date" name="">
+					</div>
+					<div class="grupo_formulario">
+						<label>Contraseña</label>
+						<input type="password" name="">
+					</div>
+					<div class="grupo_formulario enviar_div">
+						<input type="submit" name="">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+		<?php
 		include("conectar.php");
 		$valor1 = 0;
 		$valor2 = 0;
