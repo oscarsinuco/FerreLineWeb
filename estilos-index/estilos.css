@@ -1,0 +1,572 @@
+body{
+	background-image: url("../imagenes-index/fondo.jpg");
+	background-size: 400px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin: 0px;
+}
+#menu ul li {
+    background-color:#2e518b;
+}
+#desplegable{
+	background-color: rgba(209,170,72,0.9);
+}
+#menu ul li ul{
+	z-index: 9999;
+}
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#desplegable{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 10px;
+}
+#menu ul li ul{
+	width: 100%;
+}
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    padding:10px;
+    font-family:""HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-seri"f;
+  	text-transform:uppercase;
+  	letter-spacing:1px;
+}
+#menu ul li ul li ul{
+	left: 100%;
+	top: -3px;
+}
+#menu ul li {
+    position:relative;
+    float:left;
+    margin:2px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    padding:0;
+}
+#menu ul li ul li{
+	margin-left: 0px;
+	margin-right: 0px;
+    width: 100%;
+}
+.fila{
+	overflow: hidden;
+}
+#menu ul li:hover {
+    background:#5b78a7;
+}
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+}
+
+#menu ul ul li {
+    float:none;
+    width:150px
+}
+
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+
+#menu ul li:hover > ul {
+    display:block;
+}
+.fila{
+	margin: auto;
+	width: 95%;
+	border-radius: 4px;
+}
+#buscador{
+	background-color: rgba(209,170,72,0.9);
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#buscador form{
+	width: 100%;
+}
+#buscador input[type=text]{
+	border-style: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	height: 37px;
+	padding-left: 10px;
+}
+#ingresar-boton{
+	width: 90px;
+	margin-left: 10px;
+	border-radius: 5px;
+	background-color: rgb(19, 5, 141);
+	border-style: none;
+	color: white;
+	font-weight: bold;
+	height: 30px;
+}
+#ingresar-boton:hover{
+	background-color: rgb(39, 25, 161);
+}
+@media only screen and (min-width: 900px){
+	#buscador input[type=text]{
+		font-size: 16px;
+		width: 40%;
+	}
+	#menu{
+    	font-size: 15px;
+	}
+	#ingresar-boton{
+		display: none;
+	}
+	.formulario form input{
+		width: 100%;
+	}
+	#buscador{
+		height: 70px;
+	}
+	#buscador input[type=submit]{
+		height: 40px;
+	}
+	.categorias input[type=submit]{
+		height: 30px;
+	}
+	.categorias{
+		width: 19%;
+	}
+	.productos{
+		width: 59%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.categorias{
+		display: flex;
+		font-size: 13px;
+		justify-content: center;
+		align-items: center;
+	}
+	.categorias input[type=submit]{
+		width: 80%;
+	}
+	.categorias form{
+		width: 100%;
+	}
+	.categoria_individual{
+		width: 100%;
+		height: 50px;
+	}
+	.login{
+		width: 20%;
+	}
+	.fila{
+		margin: auto;
+		width: 95%;
+		border-radius: 4px;
+	}
+
+	#login-celular{
+		display: none;	
+	}
+	.producto{
+		margin: auto;
+		margin-top: 10px;
+		height: 200px;
+		width: 90%;
+		background-color:rgba(0,0,0,0.1) !important;	
+	}
+	.producto{
+		font-size: 12px;
+	}
+	.producto .descripcion .opciones{
+		height: 20%;
+	}
+	#filtro input{
+		width: 80%;
+		margin-left:10%;
+		height: 25px;
+	}
+}
+@media only screen and (min-width: 700px) and (max-width: 899px){
+	body{
+		margin: 0px;
+	}
+	#menu{
+    	font-size: 10px;
+	}
+	#buscador input[type=text]{
+		font-size: 16px;
+		height: 28px;
+		width: 60%;
+	}
+	#buscador{
+		height: 60px;
+	}
+	.productos{
+		width: 79%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.categorias input[type=submit], #buscador input[type=submit]{
+		height: 30px;
+	}
+	#ingresar-boton{
+		height: 30px;
+	}
+	.categorias{
+		width: 19%;
+		font-size: 13px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.categorias form{
+		width: 100%;
+	}
+	.categoria_individual{
+		width: 100%;
+		height: 50px;
+	}
+	.fila{
+		margin: auto;
+		width: 95%;
+		border-radius: 4px;
+	}
+	.producto{
+		margin: auto;
+		margin-top: 10px;
+		height: 200px;
+		width: 90%;
+		background-color:rgba(0,0,0,0.1) !important;	
+	}
+	#login-celular{
+		width: 100%;
+		height: 633px;
+		z-index: 10;
+		background-color: rgba(0,0,0,0.9);
+		position: fixed;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenido-login{
+		background-color: rgba(255,255,255,0.1);
+		padding-bottom: 20px;
+		border-radius: 10px;
+	}
+	.contenido-login #cerrar{
+		width: 20px;
+		float: right;
+	}
+	#subformulario{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#subformulario form{
+		width: 70%;
+	}
+	.formulario form input{
+		width: 100%;
+	}
+	.producto{
+		font-size: 14px;
+	}	
+	.login{
+		display: none;
+	}
+	.producto .descripcion .opciones{
+		height: 20%;
+	}
+	#filtro input{
+		width: 80%;
+		margin-left:10%;
+		height: 25px;
+	}
+}
+@media only screen and (max-width: 700px){
+	body{
+		margin: 0px;
+	}
+	#ingresar-boton{
+		margin-top: 10px;
+	}
+	#buscador input[type=text]{
+		font-size: 14px;
+		width: 70%;
+		height: 28px;
+	}
+	.login-celular{
+		display: none;
+		width: 100%;
+		height: 100vh;
+		z-index: 10;
+		background-color: rgba(0,0,0,0.9);
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenido-login{
+		background-color: rgba(255,255,255,0.1);
+		padding-bottom: 20px;
+		border-radius: 10px;
+	}
+	.contenido-login #cerrar{
+		width: 20px;
+		float: right;
+	}
+	#subformulario{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#subformulario form{
+		width: 70%;
+	}
+	.formulario form input{
+		width: 100%;
+	}
+	.categorias input[type=submit]{
+		width: 20%;
+	}
+	.categoria_individual{
+		width: 25%;
+		float: left;
+	}
+	#filtro{
+		margin-top: 20px;
+		width: 100%;
+	}
+	#filtro input{
+		width: 20%;
+		margin-left: 45%;
+		height: 25px;
+	}
+	.categorias{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.categorias input[type=submit], #buscador input[type=submit]{
+		height: 30px;
+	}
+	.fila div, input{
+		font-size: 10px;
+	}
+	#descripcion{
+		display: none;
+	}
+	#buscador input[type=submit]{
+		font-size: 14px;
+		width: 20%;
+	}
+	.productos{
+		width: 100%;
+	}
+	.login{
+		display: none;
+	}
+	.fila{
+		margin: auto;
+		width: 100%;
+		border-radius: 4px;
+	}
+	.producto{
+		margin: auto;
+		margin-top: 10px;
+		height: 140px;
+		width: 90%;
+		background-color:rgba(0,0,0,0.1) !important;	
+	}
+	.producto{
+		font-size: 14px;
+	}
+	.producto .descripcion .opciones{
+		height: 25%;
+	}
+}
+#buscador input[type=submit]{
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.fila>div{	
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+}
+.categorias{
+	background-color: rgba(210, 245, 9, 0.171);
+}
+.login{
+	width: 20%;
+}
+.ingreso{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+}
+.ingreso .cont-img{
+	position: relative;
+	display: flex;
+	top: -5px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+}
+.ingreso .cont-img img{
+	margin-top: 60px;
+	height: 100%;
+	z-index: 0;
+}
+.formulario form{
+	width: 90%;
+}
+.formulario{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.formulario form input{
+	height: 30px;
+	margin-top: 10px;
+	border-style: none;
+	border-radius: 4px;
+}
+.formulario form input[type=text], input[type=password]{
+	text-align: center;
+}
+.formulario form input[type=submit]:hover, input[type=button]:hover{
+	cursor: pointer;
+}
+.formulario form input[type=submit]{
+	height: 40px;
+	background-color: rgb(61,219,121);
+	color: white;
+	font-weight: bold;
+}
+.formulario form input[type=submit]:hover{
+	background-color: rgb(100,219,121);
+}
+.formulario form input[type=button]{
+	height: 40px;
+	background-color:  rgb(19, 5, 141);
+	color: white;
+	font-weight: bold;
+}
+.formulario form input[type=button]:hover{
+	background-color: rgb(39, 25, 161);
+}
+.publicidad{
+	width: 100%;
+	height: 300px;
+}
+.producto .imagen{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	width: 35%;
+	background-color:rgba(0,0,30,0.5);
+}
+.producto .imagen img{
+	width: 90%;
+}
+.producto .descripcion{
+	width: 64%;
+	margin-left: 36%;
+	height: 100%;
+	background-color:rgba(0,0,0,0,0);
+}
+.producto .descripcion .opciones{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.producto .descripcion .opciones span{
+	height: 90%;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 10px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding-right: 10px;
+	background-color: rgb(209,170,72);
+}
+.producto .descripcion .opciones p{
+	height: 90%;
+	display: flex;
+	width: 70%;
+	justify-content: center;
+
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	align-items: center;
+	color: white;
+	background-color: rgb(128,128,128);
+}
+input[type=checkbox]{
+	width: 17px;
+	height: 17px;
+	background-color: aqua;
+}
+#encabezado{
+	width: 100%;
+	height: 150px;
+	background-color: rgb(209,170,72);
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.categorias input[type=submit], #buscador input[type=submit]{
+	border-style: none;
+	background-color: rgb(61,219,121);
+	color: white;
+	font-weight: bold;
+
+}
+.producto .descripcion #vermas input[type=submit]{
+	height: 30px;
+	border-style: none;
+	background-color: rgb(61,219,121);
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+}
+.producto .descripcion #vermas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,30,0.5);
+}
+.producto .descripcion #vermas input[type=submit]:hover{
+	background-color: rgb(100,219,121);
+	cursor: pointer;
+}
+.categorias input[type=submit]{
+	border-radius: 4px;
+}
+.categorias input[type=submit]:hover, #buscador input[type=submit]:hover{
+	background-color: rgb(100,219,121);
+	cursor: pointer;
+}

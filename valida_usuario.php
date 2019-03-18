@@ -6,7 +6,6 @@
 
 	$usuario = ["cliente","empleado","jefe","administrador"];
 	$campo = ["cedula_c","cedula","cedula_j","id"];
-	$redirige = ["cliente_consulta.php","empleado_inserta.php","jefe_elimina.php","administrador.php"];
 
 	for ($i=0;$i<4;$i++)
 	{
@@ -17,6 +16,8 @@
 		if( $numeroFilas != 0 )
 		{
 			session_start();
+			$_SESSION['inicioSesion'] = time();
+
 			$columna = pg_fetch_array($resultado);
 
 			$_SESSION['datos'] = $columna;
@@ -24,11 +25,11 @@
 
 			print_r($_SESSION);
 
-			$string = "Location:".$redirige[$i];
+			$string = "Location: index.php";
 			header($string);
 		}
 	}
 
-	echo "Error encontrando usuario";
+	header('location: index.php');
 
 ?>

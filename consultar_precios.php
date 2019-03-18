@@ -1,3 +1,23 @@
+<?php
+	session_start();
+	if($_SESSION["roll"] != "administrador"){
+		if( $_SESSION["roll"] == "cliente" ){
+
+		}
+		else{
+			header("location:index.php");
+		}
+		
+	}
+
+	include("cerrarSesion.php");
+	if (isset($_SESSION['inicioSesion']))
+	{
+		cerrarSesion();
+	}
+	$_SESSION['inicioSesion'] = time();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>

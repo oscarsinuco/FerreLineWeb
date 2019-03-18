@@ -1,3 +1,17 @@
+<?php
+	session_start();
+	if($_SESSION["roll"] != "administrador"){
+		header("location:index.php");
+	}
+
+	include("cerrarSesion.php");
+	if (isset($_SESSION['inicioSesion']))
+	{
+		cerrarSesion();
+	}
+	$_SESSION['inicioSesion'] = time();
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,71 +19,13 @@
 	<title>Sede</title>
 	<script type="text/javascript" src="validaciones.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos_emergentes.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="fondo">
 </div>
-<div id="menu">
-	<div id="fblur">
-		
-	</div>
-	<div id="header">
-				<ul class="nav">
-			<li style="margin-bottom: 2px;"><a href="index.html">INICIO</a></li>
-			<li style="margin-bottom: 2px;"><a href="quienes-somos/index.html">QUIENES SOMOS</a>
-				<ul>
-					<li><a href="quienes-somos/index.html#og">OBJETIVOS GENERALES</a></li>
-					<li><a href="quienes-somos/index.html#oe">OBJETIVOS ESPECIFICOS</a></li>
-					<li><a href="quienes-somos/index.html#mi">MISÍON</a></li>
-					<li><a href="quienes-somos/index.html#vi">VISIÓN</a></li>
-				</ul>
-			</li>
-			<li style="margin-bottom: 2px;"><a href="">INSERTAR DATOS</a>
-				<ul>
-					<li><a href="almacen_pagina.php">ALMACEN</a></li>
-					<li><a href="cliente_pagina.php">CLIENTE</a></li>
-					<li><a href="director_pagina.php">DIRECTOR</a></li>
-					<li><a href="empleado_pagina.php">EMPLEADO</a></li>
-					<li><a href="jefe_pagina.php">JEFE</a></li>
-					<li><a href="mensajero_pagina.php">MENSAJERO</a></li>
-					<li><a href="mensajero_vehiculo_pagina.php">MENSAJERO-VEHICULO</a></li>
-					<li><a href="pedido_pagina.php">PEDIDO</a></li>
-					<li><a href="producto_pagina.php">PRODUCTO</a></li>
-					<li><a href="sede_pagina.php">SEDE</a></li>
-				</ul>
-			</li>
-			<li style="margin-bottom: 2px;"><a href="">CONSULTAR DATOS</a>
-				<ul>
-					<li><a target="_blank" href="consultar_almacen.php">CONSULTAR ALMACEN</a></li>
-					<li><a target="_blank" href="consultar_cliente.php">CONSULTAR CLIENTE</a></li>
-					<li><a target="_blank" href="consultar_director.php">CONSULTAR DIRECTOR</a></li>
-					<li><a target="_blank" href="consultar_empleado.php">CONSULTAR EMPLEADO</a></li>
-					<li><a target="_blank" href="consultar_jefe.php">CONSULTAR JEFE</a></li>
-					<li><a target="_blank" href="consultar_mensajero.php">CONSULTAR MENSAJERO</a></li>
-					<li><a target="_blank" href="consultar_mensajero_vehiculo.php">CONSULTAR M-V</a></li>
-					<li><a target="_blank" href="consultar_pedido.php">CONSULTAR PEDIDO</a></li>
-					<li><a target="_blank" href="consultar_producto.php">CONSULTAR PRODUCTO</a>
-						<ul>
-							<li><a target="_blank" href="consultar_precios.php">CONSULTAR PRECIO</a></li>
-							<li><a target="_blank" href="consultar_producto.php">CONSULTAR RANGO</a></li>
-						</ul>
-					</li>
-					<li><a target="_blank" href="consultar_sede.php">CONSULTAR SEDE</a></li>
-				</ul>
-			</li>
-			<li style="margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
-				<ul>
-					<li style="margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
-				</ul>
-			</li>
-		</ul>
-		</div>
-		<div id="logo">
-			<img src="imagenes/logoicon.png" width="130%"><br/>
-		</div>
-</div>
-<div class="contenedor" style="height: 750px;">
+
+<div class="contenedor">
 	<div class="encabezado"><h1>SEDE</h1></div>
 	<div class="cuerpo">
 				<form onsubmit="return validartodo8()" name="sede1" action="sede.php" method="POST">

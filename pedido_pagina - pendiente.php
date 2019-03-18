@@ -1,3 +1,16 @@
+<?php
+	session_start();
+	if($_SESSION["roll"] != "administrador"){
+		header("location:index.php");
+	}
+
+	include("cerrarSesion.php");
+	if (isset($_SESSION['inicioSesion']))
+	{
+		cerrarSesion();
+	}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -72,7 +85,7 @@
 					<li><a target="_blank" href="consultar_sede.php">CONSULTAR SEDE</a></li>
 				</ul>
 			</li>
-			<li style="margin-b<li style="margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
+			<li style="margin-bottom: 2px;"><a href="contacto/index.html">CONTACTO</a>
 				<ul>
 					<li><a href="contacto/index.html">DATOS</a></li>
 				</ul>
