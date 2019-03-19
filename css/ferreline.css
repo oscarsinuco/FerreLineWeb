@@ -5,6 +5,41 @@ body{
 .inferior{
 	background-color: rgb(30,30,50);
 }
+.tarjeta{
+	min-height: 50px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.62);
+}
+.tarjeta .imagen{
+	background-size: 100% 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	height: 145px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.f-12{
+	font-size: 12px;
+}
+.f-10{
+	font-size: 10px;
+}
+.tarjeta .descripcion-tarjeta{
+	min-height: 100px;
+}
+.gris{
+	color: gray;
+}
+.tiempo{
+	font-size: 10px;
+}
+.cont-centrado-vertical{
+	display: flex;
+	align-items: center;
+}
+#descripcion-tarjeta{
+	display: none;
+}
 .superior img:hover{
 	cursor: pointer;
 	filter: hue-rotate(90deg);
@@ -39,6 +74,37 @@ body{
 .amarillo{
 	background-color: #f0ad4e !important;
 }
+.bg-rojo{
+	background-color: #d9534f;
+}
+.fecha{
+	height: 50px;
+	box-shadow: 0px 0px 119px 2px rgba(0,0,0,0.62);
+	margin: 10px !important;
+	float: right !important;
+	width: 50px;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	border-radius: 50%;
+}
+.tipo{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	margin-top: 60px !important;
+	font-weight: bold;box-shadow: 6px -4px 90px -3px rgba(0,0,0,0.62);
+	font-size: 10px;
+	border-top-right-radius: 5px;
+}
+.abajo{
+	position: relative;
+	z-index: 0;
+	padding-top: 118px;;
+}
 .h-1-5{
 	height: 150px;
 }
@@ -64,6 +130,9 @@ body{
 .menu-footer li{
 	float: left;
 	margin-right: 30px;
+}
+.descripcion-tarjeta img:hover{
+	cursor: pointer;
 }
 .link{
 	text-decoration: none;
@@ -180,6 +249,9 @@ input[type=submit]:hover{
 	.column-comp-1{
 		width: 10%;
 	}
+	.m-comp-2-5{
+		margin: 2.5%;
+	}
 	.column-comp-2{
 		width: 20%;
 	}
@@ -256,6 +328,15 @@ input[type=submit]:hover{
 @media only screen and (min-width: 700px) and (max-width: 899px){
 	.column-tablet-1{
 		width: 10%;
+	}
+	.m-tablet-5{
+		margin: 5%;
+	}
+	.m-tablet-r-10{
+		margin-right: 10%;
+	}
+	.m-tablet-l-10{
+		margin-left: 10%;
 	}
 	.column-tablet-2{
 		width: 20%;
@@ -336,6 +417,9 @@ input[type=submit]:hover{
 	}
 	.column-cel-2{
 		width: 20%;
+	}
+	.m-cel-5{
+		margin: 5%;
 	}
 	.column-cel-3{
 		width: 30%;

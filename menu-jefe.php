@@ -1,4 +1,4 @@
-<div id="desplegable">
+<div id="desplegable" style="z-index: 9999">
 		<nav id="menu">
 			<ul>
 			<li class="column-cel-9-8" id="boton-menu"><a href="#boton-menu">Menú <img src="http://www.stickpng.com/assets/images/588a64fed06f6719692a2d14.png" alt="" style="float: right;height: 20px"></a></li>
