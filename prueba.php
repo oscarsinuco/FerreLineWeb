@@ -351,15 +351,6 @@
 <script>
 	var menu = document.getElementById("boton-menu");
 	var elems = document.getElementsByClassName('column-cel-9-8');
-	if(elems[1].style.display == "none"){
-		for (var i=0;i<elems.length;i+=1){
-			elems[i].style.display = 'block';
-		}
-	}else{
-		for (var i=0;i<elems.length;i+=1){
-			elems[i].style.display = 'none';
-		}
-	}
 	menu.onclick = function(){
 		if(elems[1].style.display == "none"){
 			for (var i=0;i<elems.length;i+=1){
