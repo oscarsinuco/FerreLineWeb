@@ -10,6 +10,45 @@ body{
 	border-radius: 3px;
 	box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.62);
 }
+.carousel{
+	width: 100%;
+	background-image: url('http://www.tvsapacheperu.pe/wp-content/uploads/2018/09/mecanica-motos-como-saber-si-esta-bien-el-sistema-arranque.jpg');
+	background-size: 100% 100%;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+}
+.circulos{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.circulos span{
+	margin: 2%;
+	border-radius: 50%;
+	background-color: #f0ad4e;
+}
+.carousel div{
+	height: 100%;
+}
+.bg-dark-a{
+	background-color: rgba(240,173,78,0.3);
+}
+.derecha{
+	background-image: url('https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png');
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 50%;
+}
+.izquierda{
+	background-image: url('https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png');
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 50%;
+	transform: rotate(180deg);
+}
 .tarjeta .imagen{
 	background-size: 100% 100%;
 	border-top-left-radius: 3px;
@@ -249,6 +288,16 @@ input[type=submit]:hover{
 	.column-comp-1{
 		width: 10%;
 	}
+	.carousel{
+		height: 70vh;
+	}
+	.circulos{
+		margin-top: 62vh;
+	}
+	.circulos span{
+		height: 16px;
+		width: 16px;
+	}
 	.m-comp-2-5{
 		margin: 2.5%;
 	}
@@ -328,6 +377,16 @@ input[type=submit]:hover{
 @media only screen and (min-width: 700px) and (max-width: 899px){
 	.column-tablet-1{
 		width: 10%;
+	}
+	.carousel{
+		height: 40vh;
+	}
+	.circulos{
+		margin-top: 32vh;
+	}
+	.circulos span{
+		height: 16px;
+		width: 16px;
 	}
 	.m-tablet-5{
 		margin: 5%;
@@ -414,6 +473,16 @@ input[type=submit]:hover{
 @media only screen and (max-width: 699px){
 	.column-cel-1{
 		width: 10%;
+	}
+	.carousel{
+		height: 30vh;
+	}
+	.circulos{
+		margin-top: 25vh;
+	}
+	.circulos span{
+		height: 12px;
+		width: 12px;
 	}
 	.column-cel-2{
 		width: 20%;

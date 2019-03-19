@@ -13,6 +13,9 @@
 <?php
 	include("menu-sin-sesion.php");
 ?>
+<?php
+	include("carousel.php");
+?>
 <div style="width: 90%; margin: auto; min-height: 500px" class="cont-centrado">
  <div class="row">
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
