@@ -5,10 +5,10 @@ body{
 	margin: 0px;
 }
 #menu ul li {
-    background-color:#2e518b;
+    background-color:rgb(30,30,50);
 }
 #desplegable{
-	background-color: rgba(209,170,72,0.9);
+	background-color: #f0ad4e;
 }
 #menu ul li ul{
 	z-index: 9999;
@@ -198,6 +198,9 @@ body{
 		margin-left:10%;
 		height: 25px;
 	}
+	#boton-menu{
+		display: none;
+	}
 }
 @media only screen and (min-width: 700px) and (max-width: 899px){
 	body{
@@ -295,10 +298,23 @@ body{
 		margin-left:10%;
 		height: 25px;
 	}
+	#boton-menu{
+		display: none;
+	}
 }
 @media only screen and (max-width: 700px){
 	body{
 		margin: 0px;
+	}
+	#menu ul .column-cel-9-8{
+		display: none;
+	}
+	#boton-menu{
+		display: block !important;
+		float: right;
+	}
+	#menu{
+		width: 100%;
 	}
 	#ingresar-boton{
 		margin-top: 10px;
