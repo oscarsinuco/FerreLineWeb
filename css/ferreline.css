@@ -12,11 +12,25 @@ body{
 }
 .carousel{
 	width: 100%;
-	background-image: url('http://www.tvsapacheperu.pe/wp-content/uploads/2018/09/mecanica-motos-como-saber-si-esta-bien-el-sistema-arranque.jpg');
 	background-size: 100% 100%;
+	background-image: url('../imagenes/c1.jpg');
 	background-position-x: 50%;
 	background-position-y: 50%;
+	z-index: 9990;
 	background-repeat: no-repeat;
+}
+.decoracion{
+	background-image: url('../imagenes/bienvenido.jpg');
+	background-size: cover;
+}
+.centrado{
+	margin: auto;
+}
+.m-h-400{
+	min-height: 400px;
+}
+.h-400{
+	height: 400px !important;
 }
 .circulos{
 	width: 100%;
@@ -32,17 +46,20 @@ body{
 	height: 100%;
 }
 .bg-dark-a{
-	background-color: rgba(240,173,78,0.3);
+	background-color: rgba(240,173,78,0.8);
 }
-.derecha{
-	background-image: url('https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png');
+.izquierda{
+	background-image: url('../imagenes/pasar.svg');
 	background-size: 30%;
 	background-repeat: no-repeat;
 	background-position-y: 50%;
 	background-position-x: 50%;
 }
-.izquierda{
-	background-image: url('https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png');
+.izquierda:hover, .derecha:hover{
+	cursor: pointer;
+}
+.derecha{
+	background-image: url('../imagenes/pasar.svg');
 	background-size: 30%;
 	background-repeat: no-repeat;
 	background-position-y: 50%;
@@ -159,16 +176,19 @@ body{
 	color: black;
 }
 .menu-footer{
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .menu-footer ul{
+	margin: 0px;
+	padding: 0px;
 	list-style: none;
 }
 .menu-footer li{
 	float: left;
-	margin-right: 30px;
+	margin-right: 10px;
 }
 .descripcion-tarjeta img:hover{
 	cursor: pointer;
@@ -185,7 +205,7 @@ body{
 	background-color: #f0ad4e !important;
 	height: 200px !important;
 }
-input[type=text],.selector, .texto-largo{
+input[type=text],input[type=password],input[type=number] ,.selector, .texto-largo{
 	color: rgb(0, 16, 17);
 	border-style: solid;
 	border: solid 1px #c7c7c7;
@@ -193,8 +213,27 @@ input[type=text],.selector, .texto-largo{
 	border-radius: 3px;
 	padding-left: .5%;
 }
+.m-b-10{
+	margin-bottom: 10px;
+}
+.text-left{
+	text-align: left !important;
+}
+.icon-login{
+	height: 150px;
+	background-image: url('../imagenes/avatar.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+}
+.m-b-40{
+	margin-bottom: 40px;
+}
 .row{
 	width: 100%;
+}
+.margen-10{
+	margin-left: 10%;
 }
 .bg-azul{
 	background-color: #0275d8 !important;
@@ -210,6 +249,9 @@ input[type=checkbox]{
 }
 .borde-radio-10{
 	border-radius: 10px;
+}
+.bg-oscuro-transparente{
+	background-color: rgba(30,30,50,0.5);
 }
 .sombra{
 	box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.75);
@@ -268,6 +310,9 @@ input[type=submit]:hover{
 	color: white;
 	border: solid 1px #c54f4f;
 }
+.h-auto{
+	height: auto;
+}
 .btn-rojo:hover{
 	background-color: #bc4f47;
 }
@@ -287,6 +332,12 @@ input[type=submit]:hover{
 @media only screen and (min-width: 900px){
 	.column-comp-1{
 		width: 10%;
+	}
+	.margen-comp-10{
+		margin-left: 10%;
+	}
+	.h-co-40{
+		height: 40px;
 	}
 	.carousel{
 		height: 70vh;
@@ -377,6 +428,12 @@ input[type=submit]:hover{
 @media only screen and (min-width: 700px) and (max-width: 899px){
 	.column-tablet-1{
 		width: 10%;
+	}
+	.h-t-30{
+		height: 43px;
+	}
+	.margen-tablet-10{
+		margin-left: 10%;
 	}
 	.carousel{
 		height: 40vh;
@@ -473,6 +530,13 @@ input[type=submit]:hover{
 @media only screen and (max-width: 699px){
 	.column-cel-1{
 		width: 10%;
+	}
+	.h-cel-30{
+		height: 27px;
+		font-size: 10px;
+	}
+	.oculto-cel{
+		display: none;
 	}
 	.carousel{
 		height: 30vh;

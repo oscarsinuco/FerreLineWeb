@@ -351,41 +351,6 @@
 <?php
 	include("footer.php");
 ?>
-<script>
-	var menu = document.getElementById("boton-menu");
-	var elems = document.getElementsByClassName('column-cel-9-8');
-	menu.onclick = function(){
-		if(elems[1].style.display == "none"){
-			for (var i=0;i<elems.length;i+=1){
-				elems[i].style.display = 'block';
-			}
-		}else{
-			for (var i=0;i<elems.length;i+=1){
-				elems[i].style.display = 'none';
-			}
-		}
-	}
-	setInterval(function(){
-		if(screen.width > 700){
-			menu.style.display = "none";
-		}
-	},100);
-	function desplegar(mostrar){
-		var padre = mostrar.parentNode.parentNode.parentNode.parentNode.parentNode;
-		var descripcion = padre.children;
-		if(descripcion[2].style.display == "block"){
-			descripcion[2].style.display = "none";
-		}else{
-			descripcion[2].style.display = "block";
-		}
-		mostrar.onclick = function(){
-			if(descripcion[2].style.display == "block"){
-				descripcion[2].style.display = "none";
-			}else{
-				descripcion[2].style.display = "block";
-			}
-		};
-	}
-</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

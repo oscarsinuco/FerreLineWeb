@@ -1,8 +1,9 @@
 body{
-	background-image: url("../imagenes-index/fondo.jpg");
-	background-size: 400px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	margin: 0px;
+	background-image: url('../imagenes/fondo.jpg');
+	background-size: 100% 100vh;
+	background-attachment: fixed;
 }
 #menu ul li {
     background-color:rgb(30,30,50);
@@ -37,8 +38,8 @@ body{
     text-decoration:none;
     font-weight:400;
     padding:10px;
-    font-family:""HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-seri"f;
-  	text-transform:uppercase;
+    font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica, Arial, sans-serif";
+  	text-transform: uppercase;
   	letter-spacing:1px;
 }
 #menu ul li ul li ul{
