@@ -34,32 +34,46 @@ var menu = document.getElementById("boton-menu");
 	};
 	var imagenes= ["imagenes/c1.jpg","imagenes/c2.jpg","imagenes/c3.jpg","imagenes/c4.jpg","imagenes/c5.jpg","imagenes/c6.jpg","imagenes/c7.jpg"];
 	var contador = 1;
+	function pasar(id){
+		contador = id;
+		for(i=0;i<=6;i++){
+			if(i != contador){
+				var temp = document.getElementById(i);
+				temp.style.backgroundColor = "white";
+			}
+		}
+		var carousel = document.getElementById("carousel");
+		var circulo = document.getElementById(contador);		
+		carousel.style.transition = "background-image .3s";
+		carousel.style.backgroundImage = "url('" + imagenes[contador] +  "')";
+		circulo.style.backgroundColor = "#0275d8";
+	}
 	function adelante(){
 		if(contador > 6){
 			contador = 0;
 			for(i=0;i<=6;i++){
 				if(i != contador){
 					var temp = document.getElementById(i);
-					temp.style.backgroundColor = "#f0ad4e";
+					temp.style.backgroundColor = "white";
 				}
 			}
 			var carousel = document.getElementById("carousel");
-			var circulo = document.getElementById(contador);
+			var circulo = document.getElementById(contador);			
+			carousel.style.transition = "background-image .3s";
 			carousel.style.backgroundImage = "url('" + imagenes[contador] +  "')";
-			carousel.style.transition = "background-image 1s";
-			circulo.style.backgroundColor = "white";
+			circulo.style.backgroundColor = "#0275d8";
 		}else{
 			for(i=0;i<=6;i++){
 				if(i != contador){
 					var temp = document.getElementById(i);
-					temp.style.backgroundColor = "#f0ad4e";
+					temp.style.backgroundColor = "white";
 				}
 			}
 			var carousel = document.getElementById("carousel");
-			var circulo = document.getElementById(contador);
+			var circulo = document.getElementById(contador);			
+			carousel.style.transition = "background-image .3s";
 			carousel.style.backgroundImage = "url('" + imagenes[contador] +  "')";
-			carousel.style.transition = "background-image 1s";
-			circulo.style.backgroundColor = "white";
+			circulo.style.backgroundColor = "#0275d8";
 			contador++;
 		}
 	};
@@ -70,26 +84,26 @@ var menu = document.getElementById("boton-menu");
 			for(i=0;i<=6;i++){
 				if(i != contador){
 					var temp = document.getElementById(i);
-					temp.style.backgroundColor = "#f0ad4e";
+					temp.style.backgroundColor = "white";
 				}
 			}
 			var carousel = document.getElementById("carousel");
-			var circulo = document.getElementById(contador);
+			var circulo = document.getElementById(contador);			
+			carousel.style.transition = "background-image .3s";
 			carousel.style.backgroundImage = "url('" + imagenes[contador] +  "')";
-			carousel.style.transition = "background-image 1s";
-			circulo.style.backgroundColor = "white";
+			circulo.style.backgroundColor = "#0275d8";
 		}else{
 			for(i=0;i<=6;i++){
 				if(i != contador){
 					var temp = document.getElementById(i);
-					temp.style.backgroundColor = "#f0ad4e";
+					temp.style.backgroundColor = "white";
 				}
 			}
 			var carousel = document.getElementById("carousel");
-			var circulo = document.getElementById(contador);
+			var circulo = document.getElementById(contador);			
+			carousel.style.transition = "background-image .3s";
 			carousel.style.backgroundImage = "url('" + imagenes[contador] +  "')";
-			carousel.style.transition = "background-image 1s";
-			circulo.style.backgroundColor = "white";
+			circulo.style.backgroundColor = "#0275d8";
 		}
 	}
 	setInterval(adelante, 10000);

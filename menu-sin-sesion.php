@@ -12,7 +12,7 @@
 					</ul>
 				</li>
 				<li class="column-cel-9-8"><a href="contacto/index.html">Contacto</a></li>
-				<li class="column-cel-9-8"><a href="quienes-somos/index.html#og">Iniciar sesión</a></li>
+				<li class="column-cel-9-8"><a href="login.php">Iniciar sesión</a></li>
 				<li class="column-cel-9-8"><a href="quienes-somos/index.html#oe">Registrarse</a></li>
 				</li>
 			</ul>

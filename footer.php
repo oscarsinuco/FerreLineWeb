@@ -1,12 +1,12 @@
 <div class="footer">
 	<div class="row superior">
 		<div class="column-comp-10 column-tablet-10 column-cel-10">
-			<center><img src="imagenes/facebook.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
-			<img src="imagenes/twitter.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
-			<img src="imagenes/instagram.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
-			<img src="imagenes/youtube.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
-			<img src="imagenes/whatsapp.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
-			<img src="imagenes/google.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30"></center>
+			<center><img src="/FerreLineWeb/imagenes/facebook.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
+			<img src="/FerreLineWeb/imagenes/twitter.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
+			<img src="/FerreLineWeb/imagenes/instagram.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
+			<img src="/FerreLineWeb/imagenes/youtube.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
+			<img src="/FerreLineWeb/imagenes/whatsapp.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
+			<img src="/FerreLineWeb/imagenes/google.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30"></center>
 		</div>
 		<div class="column-comp-10 column-tablet-10 column-cel-10">
 			<nav class="menu-footer">

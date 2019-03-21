@@ -11,6 +11,9 @@ body{
 #desplegable{
 	background-color: #f0ad4e;
 }
+.span-pasar{
+	cursor: pointer;
+}
 #menu ul li ul{
 	z-index: 9999;
 }

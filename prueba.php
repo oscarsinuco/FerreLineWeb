@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Inicio</title>
@@ -19,7 +19,7 @@
 <div style="width: 90%; margin: auto; min-height: 500px" class="cont-centrado">
  <div class="row">
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('https://media.diariolasamericas.com/adjuntos/216/imagenes/001/017/0001017044.jpg');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/motor.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -40,7 +40,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>
@@ -60,7 +60,7 @@
 			</div>
 		</div>
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('https://www.demaquinasyherramientas.com/wp-content/uploads/2012/08/Taladro-SALKOR-Rotomartillo.jpg');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/taladro.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -81,7 +81,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>
@@ -101,7 +101,7 @@
 			</div>
 		</div>
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('https://http2.mlstatic.com/disco-sierra-circular-814-x40-x25-dewalt-D_NQ_NP_734991-MCO28017329613_082018-F.jpg');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/disco.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -122,7 +122,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>
@@ -142,7 +142,7 @@
 			</div>
 		</div>
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/512KELNIxUL._SX425_.jpg');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/martillo.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -163,7 +163,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>
@@ -183,7 +183,7 @@
 			</div>
 		</div>
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('http://www.metalmarchile.cl/87-large_default/compresor-falcon-50-2hp-myh.jpg');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/compresor.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -204,7 +204,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>
@@ -224,7 +224,7 @@
 			</div>
 		</div>
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/816nRTfdzJL._SX425_.jpg');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/pistolas.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -245,7 +245,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>
@@ -265,7 +265,7 @@
 			</div>
 		</div>
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('https://cdn.shopify.com/s/files/1/0183/0329/products/0994925000.jpg?v=1510190184');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/tornillo.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -286,7 +286,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>
@@ -306,7 +306,7 @@
 			</div>
 		</div>
 		<div class="tarjeta column-comp-2 column-tablet-4 column-cel-9 bg-blanco m-comp-2-5 m-tablet-5 m-cel-5">
-			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('https://www.cominsard.com/wp-content/uploads/2014/02/Pulidora-MAKITA-7%E2%80%9D-c%C3%B3digo-4794.jpg');">
+			<div class="column-comp-10 column-tablet-10 column-cel-10 imagen" style="background-image: url('imagenes/pulidora.jpg');">
 				<div class="fecha bg-rojo cont-centrado blanco">
 					<center>28<br>ABR</center>
 				</div>
@@ -327,7 +327,7 @@
 										<h3>BBC</h3>
 									</div>
 									<div class="column-comp-3 column-tablet-3 column-cel-3 cont-centrado">
-										<h3><img src="https://www.shareicon.net/download/2015/10/18/657870_arrows_512x512.png" onclick="desplegar(this)" height="10" alt=""></h3>
+										<h3><img src="imagenes/flechas.png" onclick="desplegar(this)" height="10" alt=""></h3>
 									</div>
 								</div>
 							</div>

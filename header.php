@@ -16,7 +16,7 @@
 		<div class="column-comp-4 column-tablet-4 column-cel-10 cont-centrado inferior h-1-5">
 			<div class="row h-100 cont-centrado">
 				<div class="column-comp-4 column-tablet-4 column-cel-4 cont-centrado">
-					<img src="imagenes/tuerca.png" class="h-0-7" alt="">
+					<img src="/FerreLineWeb/imagenes/tuerca.png" class="h-0-7" alt="">
 				</div>
 				<div class="column-comp-6 column-tablet-6 column-cel-6">
 					<h1 class="titulo-md blanco">EN FERRELINE PODRÁS ENCONTRAR TODOS LOS PRODUCTOS QUE QUIERAS, PARA TU HOGAR, TU EMPRESA O TRABAJO.</h1>
