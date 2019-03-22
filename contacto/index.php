@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Inicio</title>
+	<title>Contacto</title>
 	<link rel="stylesheet" type="text/css" href="../css/ferreline.css">
 	<link rel="stylesheet" type="text/css" href="../estilos-index/estilos.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <?php
-	include("..//header.php");
+	include("../header.php");
 ?>
 <?php
 	include("../menu-sin-sesion.php");
@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-    <div class="oculto-cel column-comp-5 margen-comp-10 margen-tablet-10 column-tablet-5 column-cel-10 contacto h-400 borde-radio-10">
+    <div class="oculto-cel column-comp-5 margen-comp-10 margen-tablet-10 column-tablet-5 column-cel-10 contacto sombra h-400">
     </div>
 </div><br>
 <?php

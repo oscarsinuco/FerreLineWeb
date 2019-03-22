@@ -33,7 +33,7 @@
             </div>
         </form>
     </div>
-    <div class="oculto-cel column-comp-5 margen-comp-10 margen-tablet-10 column-tablet-5 column-cel-10 decoracion h-400 borde-radio-10">
+    <div class="oculto-cel column-comp-5 margen-comp-10 margen-tablet-10 column-tablet-5 column-cel-10 decoracion h-400 sombra">
     </div>
 </div><br>
 <?php
