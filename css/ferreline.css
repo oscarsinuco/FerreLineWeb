@@ -19,6 +19,12 @@ body{
 	z-index: 9990;
 	background-repeat: no-repeat;
 }
+.registro{
+	background-image: url('../imagenes/registro.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
 .decoracion{
 	background-image: url('../imagenes/bienvenido.jpg');
 	background-size: cover;
@@ -117,6 +123,9 @@ body{
 .h-100{
 	height: 100%;
 }
+.h-600{
+	height: 600px !important;
+}
 .h-80{
 	height: 80% !important;
 }
@@ -207,6 +216,9 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.p-top-50{
+	padding-top: 50px !important;
 }
 .menu-footer ul{
 	margin: 0px;
@@ -366,6 +378,9 @@ input[type=submit]:hover{
 	.margen-comp-10{
 		margin-left: 10%;
 	}
+	.margen-comp-20{
+		margin-left: 20%;
+	}
 	.h-co-40{
 		height: 40px;
 	}
@@ -474,6 +489,9 @@ input[type=submit]:hover{
 	}
 	.margen-tablet-10{
 		margin-left: 10%;
+	}
+	.margen-tablet-20{
+		margin-left: 20%;
 	}
 	.parrafo-tablet{
 		font-size: .8em;

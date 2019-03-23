@@ -1,6 +1,6 @@
-<div class="footer">
+<div>
 	<div class="row superior">
-		<div class="column-comp-10 column-tablet-10 column-cel-10">
+		<div class="column-comp-10 column-tablet-10 column-cel-10 bg-amarillo p-top-50">
 			<center><img src="/FerreLineWeb/imagenes/facebook.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
 			<img src="/FerreLineWeb/imagenes/twitter.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
 			<img src="/FerreLineWeb/imagenes/instagram.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
@@ -8,7 +8,7 @@
 			<img src="/FerreLineWeb/imagenes/whatsapp.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30">
 			<img src="/FerreLineWeb/imagenes/google.png" style="margin-left:10px; margin-right: 10px" class="h-co-40 h-t-30 h-cel-30"></center>
 		</div>
-		<div class="column-comp-10 column-tablet-10 column-cel-10">
+		<div class="column-comp-10 column-tablet-10 column-cel-10 bg-amarillo">
 			<nav class="menu-footer">
 				<ul>
 					<li>

@@ -11,7 +11,39 @@
 	include("../header.php");
 ?>
 <?php
-	include("../menu-sin-sesion.php");
+    session_start();
+    include("../cerrarSesion.php");
+    if (isset($_SESSION['inicioSesion']))
+    {
+        cerrarSesion();
+    }
+    if ( isset($_SESSION['roll']) )
+    {
+        if($_SESSION["roll"] == "cliente"){
+            include("../menu-cliente.php");
+        }
+        else{
+            if($_SESSION["roll"] == "empleado"){
+                include("../menu-empleado.php");
+            }
+            else{
+                if($_SESSION["roll"] == "jefe"){
+                    include("../menu-jefe.php");
+                }
+                else{
+                    if($_SESSION["roll"] == "administrador"){
+                        include("../menu.php");
+                    }
+                    else{
+                        include("../menu-sin-sesion.php");
+                    }
+                }
+            }
+        }
+    }
+    else{
+        include("../menu-sin-sesion.php");
+    }
 ?>
 <div class="row column-comp-9 column-tablet-9 column-cel-10 cont-centrado centrado">
     <div class="column-comp-10 column-tablet-8 column-cel-10 m-h-400 bg-oscuro-transparente borde-radio-10 cont-centrado">
@@ -24,7 +56,7 @@
                     <div class="column-comp-8 column-tablet-8 column-cel-8">
                         <div class="row h-100 column-comp-10 column-tablet-10 column-cel-10">
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5 bg-amarillo">
-                                <h3 class="texto-centrado blanco">Objetivos generales</h3>
+                                <h3 class="texto-centrado blanco" id="og">Objetivos generales</h3>
                             </div>
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5">
                                 <p class="justificado blanco parrafo-comp parrafo-tablet parrafo-cel">
@@ -36,7 +68,7 @@
                         </div>
                         <div class="row h-100 column-comp-10 column-tablet-10 column-cel-10">
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5 bg-amarillo">
-                                <h3 class="texto-centrado blanco">Objetivos específicos</h3>
+                                <h3 class="texto-centrado blanco" id="oe">Objetivos específicos</h3>
                             </div>
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5">
                                 <p class="justificado blanco parrafo-comp parrafo-tablet parrafo-cel">
@@ -52,7 +84,7 @@
                         </div>
                         <div class="row h-100 column-comp-10 column-tablet-10 column-cel-10">
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5 bg-amarillo">
-                                <h3 class="texto-centrado blanco">Nuestra misión</h3>
+                                <h3 class="texto-centrado blanco" id="mi">Nuestra misión</h3>
                             </div>
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5">
                                 <p class="justificado blanco parrafo-comp parrafo-tablet parrafo-cel">
@@ -62,7 +94,7 @@
                         </div>
                         <div class="row h-100 column-comp-10 column-tablet-10 column-cel-10">
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5 bg-amarillo">
-                                <h3 class="texto-centrado blanco">Nuestra visión</h3>
+                                <h3 class="texto-centrado blanco" id="vi">Nuestra visión</h3>
                             </div>
                             <div class="column-comp-10 column-tablet-10 column-cel-10 h-5">
                                 <p class="justificado blanco parrafo-comp parrafo-tablet parrafo-cel">
