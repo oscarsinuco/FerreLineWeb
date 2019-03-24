@@ -11,7 +11,40 @@
 	include("../header.php");
 ?>
 <?php
-	include("../menu-sin-sesion.php");
+    session_start();
+    include("../cerrarSesion.php");
+    if (isset($_SESSION['inicioSesion']))
+    {
+        cerrarSesion();
+    }
+    if ( isset($_SESSION['roll']) )
+    {
+        if($_SESSION["roll"] == "cliente"){
+            include("../menu-cliente.php");
+        }
+        else{
+            if($_SESSION["roll"] == "empleado"){
+                include("../menu-empleado.php");
+            }
+            else{
+                if($_SESSION["roll"] == "jefe"){
+                    include("../menu-jefe.php");
+                }
+                else{
+                    if($_SESSION["roll"] == "administrador"){
+                        include("../menu.php");
+                    }
+                    else{
+                        include("../menu-sin-sesion.php");
+                    }
+                }
+            }
+        }
+    }
+    else
+    {
+        include("../menu-sin-sesion.php");
+    }
 ?>
 <div class="row m-h-400 column-comp-9 column-tablet-9 column-cel-9 centrado">
     <div class="column-comp-4 column-tablet-4 column-cel-10 h-400 bg-oscuro-transparente borde-radio-10 cont-centrado">

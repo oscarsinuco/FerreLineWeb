@@ -13,13 +13,10 @@
 <?php
 	session_start();
 	include("cerrarSesion.php");
-	if (isset($_SESSION['inicioSesion']))
-	{
+	if (isset($_SESSION['inicioSesion'])){
 		cerrarSesion();
 	}
-
-	if ( isset($_SESSION['roll']) )
-	{
+	if (isset($_SESSION['roll']) ){
 		if($_SESSION["roll"] == "cliente"){
 			include("menu-cliente.php");
 		}
@@ -42,8 +39,7 @@
 			}
 		}
 	}
-	else
-	{
+	else{
 		include("menu-sin-sesion.php");
 	}
 ?>

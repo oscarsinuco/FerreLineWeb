@@ -3,7 +3,7 @@
 	{
 		$horaActual = time();
 
-		if( $horaActual - $_SESSION['inicioSesion'] > 20 )
+		if( $horaActual - $_SESSION['inicioSesion'] < 0 )
 		{	
 			session_unset();
 			session_destroy();

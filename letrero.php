@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Modificar Cliente</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/estilos_consulta.css">
-</head>
-<body>
-
-	<div id="letrero" style="background-color: green; width:100%; height: 80px; display: flex; justify-content: center; align-items: center; margin-bottom: 10px">
-
-		<p style="font-size: 20pt; text-align: center; color: white;">Datos actualizados</p>
-
+<div class="row column-comp-9 column-tablet-9 column-cel-10 centrado">
+	<div class="column-cel-10 column-comp-10 column-tablet-10 bg-verde m-b-10 borde-radio-10 blanco cont-centrado">
+		<h1>DATOS MODIFICADOS</h1>
 	</div>
-
-</body>
-</html>
+</div>

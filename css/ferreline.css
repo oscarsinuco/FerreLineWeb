@@ -25,6 +25,12 @@ body{
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
+.modifica{
+	background-image: url('../imagenes/modifica.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
 .decoracion{
 	background-image: url('../imagenes/bienvenido.jpg');
 	background-size: cover;
@@ -67,6 +73,9 @@ body{
 }
 .bg-amarillo{
 	background-color: #f0ad4e !important;
+}
+.bg-verde{
+	background-color: #5cb85c !important;
 }
 .izquierda{
 	background-image: url('../imagenes/pasar.svg');
@@ -148,6 +157,9 @@ body{
 .h-0-6{
 	height: 60px;
 }
+.h-0-8{
+	height: 80px;
+}
 .w-90{
 	width: 90% !important;
 }
@@ -156,6 +168,9 @@ body{
 }
 .h-0-7{
 	height: 70px;
+}
+.h-0-9{
+	height: 90px;
 }
 .titulo{
 	font-size: 1.5em !important;
@@ -247,7 +262,7 @@ body{
 	background-color: #f0ad4e !important;
 	height: 200px !important;
 }
-input[type=text],input[type=password],input[type=number] ,.selector, .texto-largo{
+input[type=text],input[type=password],input[type=number], input[type=date],input[type=email], .selector, .texto-largo{
 	color: rgb(0, 16, 17);
 	border-style: solid;
 	border: solid 1px #c7c7c7;
@@ -257,6 +272,15 @@ input[type=text],input[type=password],input[type=number] ,.selector, .texto-larg
 }
 .m-b-10{
 	margin-bottom: 10px;
+}
+.m-b-50{
+	margin-bottom: 50px;
+}
+.m-b-40{
+	margin-bottom: 40px;
+}
+.m-b-30{
+	margin-bottom: 30px;
 }
 .text-left{
 	text-align: left !important;
@@ -437,6 +461,9 @@ input[type=submit]:hover{
 	.text-comp, .texto-largo{
 		height: 30px;
 	}
+	.text-comp-md{
+		height: 25px;
+	}
 	.total-comp{
 		width: 99.5%;
 	}
@@ -478,6 +505,9 @@ input[type=submit]:hover{
 	}
 	.noventa-comp{
 		width: 90%;
+	}
+	.oculto-comp{
+		display: none;
 	}
 }
 @media only screen and (min-width: 700px) and (max-width: 899px){
@@ -593,6 +623,9 @@ input[type=submit]:hover{
 	}
 	.noventa-tablet{
 		width: 90%;
+	}
+	.oculto-tablet{
+		display: none;
 	}
 }
 @media only screen and (max-width: 699px){
