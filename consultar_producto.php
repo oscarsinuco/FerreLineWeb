@@ -24,7 +24,7 @@
 	<title>Consulta productos</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos_consulta.css">
 </head>
-<body>	
+<body>
 	<?php
 		include("conectar.php");
 		$valor1 = 0;

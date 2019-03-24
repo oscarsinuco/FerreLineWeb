@@ -65,7 +65,7 @@
 			if($conexion){
 				if($_POST == null){
 					$a = $_SESSION['datos'];
-					$consulta_cliente = "select * from cliente where cedula_c = '".$a['cedula_c']."';"; 
+					$consulta_cliente = "select * from cliente where cedula_c = '".$a['cedula_c']."'"; 
 					$resultado = pg_query($conexion,$consulta_cliente);
 					if($resultado){
 						$row = pg_fetch_array($resultado);
@@ -81,6 +81,13 @@
 						$correo = $row['9'];
 						$fecha_nacimiento = $row['10'];
 						$contrasena = $row['11'];
+					}
+					$consulta_barrio = "select nombre from barrio where id_barrio = $id_barrio";
+					$resultado_barrio = pg_query($conexion, $consulta_barrio);
+					if($resultado_barrio){
+						$fila_barrio = pg_fetch_array($resultado_barrio);
+						$nombre_barrio = $fila_barrio['nombre'];
+						$_SESSION["nombre_barrio"] = $nombre_barrio;
 					}
 				}
 				if($_POST != null){
@@ -110,9 +117,17 @@
 							$_SESSION['modificado'] = 'false';
 						}
 					}
+					$consulta_barrio = "select nombre from barrio where id_barrio = $id_barrio";
+					$resultado_barrio = pg_query($conexion, $consulta_barrio);
+					if($resultado_barrio){
+						$fila_barrio = pg_fetch_array($resultado_barrio);
+						$nombre_barrio = $fila_barrio['nombre'];
+						$_SESSION["nombre_barrio"] = $nombre_barrio;
+					}
 				}
 				pg_close($conexion);
 			}else{
+				pg_close($conexion);
 				header('location: /FerreLineWeb/');
 			}
 	?>
@@ -130,7 +145,36 @@
                                 <label for="" class="blanco parrafo-comp parrafo-tablet parrafo-cel">Cédula<input type="number" class="text-comp-md text-tablet text-cel column-comp-10 column-tablet-10 column-cel-10" value="<?php echo $cedula_c; ?>" disabled><input type='hidden' name='cedula_c' value='<?php echo $cedula_c;?>'></label>
                             </div>
                             <div class="column-comp-4 column-tablet-10 margen-comp-20 column-cel-10">
-                                <label for="" class="blanco parrafo-comp parrafo-tablet parrafo-cel">Barrio<input type="text" class="text-left text-comp-md text-tablet text-cel column-comp-10 column-tablet-10 column-cel-10" name="id_barrio" value="<?php echo $id_barrio; ?>"></label>
+                                <label for="" class="blanco parrafo-comp parrafo-tablet parrafo-cel">Barrio
+                                    <select class="text-cel text-tablet text-comp-md selector column-tablet-10 column-comp-10 column-cel-10" name="id_barrio">
+                                    	<option value="<?php echo $_SESSION['datos']['1'];?>" selected><?php echo $_SESSION["nombre_barrio"]; ?></option>
+                                        <?php
+                                            $conexion = conectarse();
+                                            if($conexion){
+                                                $consulta = "select id_barrio, nombre from barrio";
+                                                $resultado = pg_query($conexion,$consulta);
+                                                if($resultado){
+                                                    $filas = pg_num_rows($resultado);
+                                                    if($filas > 0){
+                                                        while($fila = pg_fetch_array($resultado)){
+                                                        	if($_SESSION['datos']['1'] != $fila["id_barrio"]){
+                                                        		$nombre = $fila["nombre"];
+	                                                            $id = $fila["id_barrio"];
+	                                                            echo "<option value='$id'>$nombre</option>";
+                                                        	}
+                                                        }
+                                                    }else{
+                                                        echo "<option>No hay entradas</option>";
+                                                    }
+                                                }else{
+                                                    echo "<option>No hay entradas</option>";
+                                                }
+                                            }else{
+                                                echo "<option>No hay entradas</option>";
+                                            }
+                                            pg_close($conexion);
+                                        ?>
+                                    </select>
                             </div>
                         </div>
                         <div class="row column-comp-10 column-tablet-10 column-cel-10 m-b-10">
@@ -177,7 +221,7 @@
                         </div>
                         <div class="row column-comp-10 column-tablet-10 column-cel-10 cont-centrado m-b-10">
                             <div class="column-comp-10 column-tablet-10 column-cel-10 cont-centrado">
-                                <input type="submit" class="btn-amarillo column-comp-4 boton-comp boton-tablet boton-cel" value="Modificar">
+                                <input type="submit" class="btn-verde column-comp-4 boton-comp boton-tablet boton-cel" value="Modificar">
                                 <input type="submit" class="btn-azul column-comp-4 margen-10 boton-comp boton-tablet boton-cel" value="Cancelar">
                             </div>
                         </div>

@@ -10,6 +10,12 @@ body{
 	border-radius: 3px;
 	box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.62);
 }
+.m-h-200{
+	min-height: 200px !important;
+}
+.h-200{
+	height: 200px !important;
+}
 .carousel{
 	width: 100%;
 	background-size: 100% 100%;
@@ -121,6 +127,12 @@ body{
 .cont-centrado-vertical{
 	display: flex;
 	align-items: center;
+}
+.m-t-20{
+	margin-top: 20px;
+}
+.m-b-20{
+	margin-bottom: 20px;
 }
 #descripcion-tarjeta{
 	display: none;
